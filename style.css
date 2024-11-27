@@ -42,33 +42,85 @@ body {
     background-color: var(--white);
     position: relative;
     bottom: 0px;
+    align-items: center;
 }
 
 .right-container {
     background-color: var(--yellow);
+    position: relative;
+    bottom: 0px;
+    align-items: center;
 }
 
 .wrench-pic {
     margin: 0 auto;
+    padding-bottom: 10px;
     position: relative;
     /* width: 350px;
     height: 180px; */
 }
 
+.label-pic {
+    position: absolute;
+    left: -10%;
+    top: -5%;
+}
+
 .info-cont {
-    height: auto;
+    width: 290px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+}
+
+.main-text {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.small-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.price-cont {
+    width: 290px;
+    height: 84px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}
 
+.old-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 43px;
+    font-weight: 500;
+    color: var(--red);
 }
 
 .basket-pic {
     background-color: var(--black);
     position: absolute;
     bottom: 0px;
+    left: 0;
     border-radius: 0px 10px;
-    padding: 20px;
+    padding: 30px 25px;
     margin-top: 30px; 
 }
 
