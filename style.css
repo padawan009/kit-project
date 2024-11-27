@@ -60,12 +60,33 @@ body {
     height: 180px; */
 }
 
-.label-pic {
+.label-cont {
+    display: flex;
+    /* position: relative; */
     position: absolute;
     left: -10%;
     top: -5%;
 }
 
+.label-pic {
+    position: absolute;
+    text-align: center;
+    left: -10%;
+    top: -5%;
+}
+
+.discount {
+    /* position: absolute;
+    left: -4%;
+    top: 5%; */
+    
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white);
+    margin: 0;
+    rotate: -45deg;
+    margin: 28px 0px 0px 15px;
+}
 .info-cont {
     width: 290px;
     height: 98px;
