@@ -1,6 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
-    font-family: 'Rubik', sans-serif;
+    --yellow: #ffd100;
+    --red: #941b0c;
+    --black: #000000;
+    --grey: #808080;
+    --silver: #f3f3f3;
+    --white: #ffffff;
     
 }
+
+body {
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    height: 454px;
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    position: relative;
+}
+
+.left-container,
+.right-container {
+    width: 350px;
+    height: 434px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container {
+    background-color: var(--white);
+    position: relative;
+    bottom: 0px;
+}
+
+.right-container {
+    background-color: var(--yellow);
+}
+
+.wrench-pic {
+    margin: 0 auto;
+    position: relative;
+    /* width: 350px;
+    height: 180px; */
+}
+
+.info-cont {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.basket-pic {
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 10px;
+    padding: 20px;
+    margin-top: 30px; 
+}
+
+.basket-pic::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 25px 0 0 yellow;
+  }
