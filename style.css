@@ -7,7 +7,6 @@
     --grey: #808080;
     --silver: #f3f3f3;
     --white: #ffffff;
-    
 }
 
 body {
@@ -26,7 +25,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     gap: 30px;
-    /* position: relative; */
 }
 
 .left-container,
@@ -64,15 +62,15 @@ body {
     top: -5%;
 }
 
-/* .right-container::after {
+span {
     position: absolute;
-    content: "10%";
+    text-align: center;
+    left: -4%;
+    top: 2%;
     color: var(--white);
     font-size: 24px;
     rotate: -45deg;
-    left: -5%;
-    top: 5%;
-} */
+}
 
 .info-cont {
     width: 290px;
@@ -83,7 +81,6 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 20px 0;
-
 }
 
 .main-text {
