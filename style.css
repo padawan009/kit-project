@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     gap: 30px;
-    position: relative;
+    /* position: relative; */
 }
 
 .left-container,
@@ -36,36 +36,25 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 0px;
+    align-items: center;
 }
 
 .left-container {
     background-color: var(--white);
-    position: relative;
-    bottom: 0px;
-    align-items: center;
 }
 
 .right-container {
     background-color: var(--yellow);
-    position: relative;
-    bottom: 0px;
-    align-items: center;
 }
 
 .wrench-pic {
     margin: 0 auto;
     padding-bottom: 10px;
-    position: relative;
+    /* position: relative; */
     /* width: 350px;
     height: 180px; */
-}
-
-.label-cont {
-    display: flex;
-    /* position: relative; */
-    position: absolute;
-    left: -10%;
-    top: -5%;
 }
 
 .label-pic {
@@ -75,18 +64,16 @@ body {
     top: -5%;
 }
 
-.discount {
-    /* position: absolute;
-    left: -4%;
-    top: 5%; */
-    
-    font-size: 24px;
-    font-weight: 500;
+/* .right-container::after {
+    position: absolute;
+    content: "10%";
     color: var(--white);
-    margin: 0;
+    font-size: 24px;
     rotate: -45deg;
-    margin: 28px 0px 0px 15px;
-}
+    left: -5%;
+    top: 5%;
+} */
+
 .info-cont {
     width: 290px;
     height: 98px;
@@ -145,14 +132,28 @@ body {
     margin-top: 30px; 
 }
 
-.basket-pic::before {
+.left-container::before,
+.right-container::before {
     content: "";
     position: absolute;
-    top: -20px;
+    bottom: 90px;
     left: 0;
-    background-color: red;
+    background-color: transparent;
     height: 50px;
     width: 50px;
-    border-bottom-left-radius: 50%;
-    box-shadow: 0 25px 0 0 yellow;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 25px 0 0 var(--black);
+  }
+
+  .left-container::after,
+  .right-container::after {
+    content: "";
+    position: absolute;
+    left: 95px;
+    bottom: 0px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -25px 0px 0 0 var(--black);
   }
