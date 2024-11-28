@@ -28,8 +28,6 @@ body {
 
 .left-container,
 .right-container {
-    /* width: 350px; */
-    /* min-height: 434px; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -37,7 +35,7 @@ body {
     bottom: 0px;
     align-items: center;
     padding: 0 30px 30px;
-    flex: 0 1 auto;
+    flex: auto;
 }
 
 .left-container {
@@ -70,8 +68,6 @@ span {
 }
 
 .info-cont {
-    /* width: 290px; */
-    /* height: 98px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,8 +91,6 @@ span {
 }
 
 .price-cont {
-    /* width: 290px; */
-    /* height: 84px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
