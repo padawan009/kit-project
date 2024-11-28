@@ -19,24 +19,24 @@ body {
 }
 
 .cards-container {
-    width: 760px;
+    max-width: 760px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 30px;
+    gap: 60px;
 }
 
 .left-container,
 .right-container {
-    min-width: 350px;
-    min-height: 434px;
+    /* width: 350px; */
+    /* min-height: 434px; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
     bottom: 0px;
     align-items: center;
-    gap: 20px;
+    padding: 0 30px 30px;
 }
 
 .left-container {
@@ -48,7 +48,7 @@ body {
 }
 
 .wrench-pic {
-    margin: 0 auto 7px;
+    margin: 0 auto 40px;
 }
 
 .label-pic {
@@ -69,13 +69,14 @@ span {
 }
 
 .info-cont {
-    width: 290px;
-    height: 98px;
+    /* width: 290px; */
+    /* height: 98px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .main-text {
@@ -89,16 +90,19 @@ span {
     font-size: 14px;
     font-weight: 400;
     color: var(--grey);
+    margin-bottom: 30px;
 }
 
 .price-cont {
-    width: 290px;
-    height: 84px;
+    /* width: 290px; */
+    /* height: 84px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     gap: 5px;
+    margin-top: 0;
+    margin-left: auto;
 }
 
 .old-price {
