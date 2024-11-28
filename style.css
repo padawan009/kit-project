@@ -19,8 +19,7 @@ body {
 }
 
 .cards-container {
-    min-height: 454px;
-    min-width: 760px;
+    width: 760px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -55,14 +54,14 @@ body {
 .label-pic {
     position: absolute;
     text-align: center;
-    left: -10%;
+    left: -8%;
     top: -5%;
 }
 
 span {
     position: absolute;
     text-align: center;
-    left: -4%;
+    left: -3%;
     top: 2%;
     color: var(--white);
     font-size: 24px;
